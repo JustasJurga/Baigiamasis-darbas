@@ -7,21 +7,11 @@ body {
 
 /* Reuseables */
 
-/* .flex {
-	display: flex;
-	justify-content: space-around;
-} */
-
 .page-width {
 	width: 100%;
 	max-width: 1020px;
 	margin: 0 auto;
 }
-
-/* .image-reset {
-	display: block;
-	width: auto;
-} */
 
 .list-reset {
 	padding-left: 0;
@@ -32,22 +22,26 @@ body {
 
 /* Social menu */
 
+.social-menu {
+  margin-left: -40px;
+  margin-top: -70px;
+  position: fixed;
+}
+
 .social-list {
-  display: flex;
-  align-items: flex-start;
   list-style: none;
   padding: 0%;
   width: 0%;
 }
 
 .fa {
-  display: flex;
   padding: 10px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 8px;
   }
   
   .fa:hover {
@@ -73,11 +67,13 @@ body {
 /* Navigation */
 
 .navigation {
+  border-radius: 8px;
   margin: 30px;
 	border-bottom: 1px solid rgb(175, 168, 168);
 }
 
 .navigation .menu {
+  display: flex;
   justify-content: flex-end ;
 }
 
@@ -93,13 +89,14 @@ body {
 	padding-right: 0;
 }
 
-.navigation .btn-primary {
-	background-color: rgb(221, 217, 217);
+.navigation .btn-primary:hover {
+  box-shadow: 0px 4px 8px 0px rgba(186,186,186,1);
+	transform: scale(1.04);
+	transition: all .4s ease-in-out;
+	background-color: rgb(134, 130, 130);
   border-color: rgb(17, 16, 16);
   text-decoration: black;
 }
-
-
 
 
 /* HLT */
@@ -123,12 +120,43 @@ body {
 
 .legend-text {
   font-weight: 300;
-  color: #76787e;
+  color: #a2a5ad;
 }
 
 
+/* Services */
 
+.section-services {
+  display: flex;
+  justify-content: space-between;
+}
 
+.section-services .service {
+	width: 320px;
+	margin-top: 60px;
+	/* margin-bottom: 80px; */
+	border: 1px solid rgba(59, 58, 58, 0.1);
+	cursor: default;
+	box-shadow: 0px 4px 12px 0px rgba(186,186,186,0);
+	border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-services .service:hover {
+	box-shadow: 0px 4px 12px 0px rgba(186,186,186,1);
+	transform: scale(1.04);
+	transition: all .4s ease-in-out;
+}
+
+.section-services .service h3 {
+	text-align: center;
+	font-weight: 300;
+	color: rgb(139, 139, 139)
+}
+
+.service .service-text {
+  color: #a2a5ad;
+}
 
 
 /* Responsive */
